@@ -1,4 +1,4 @@
-# Healthcare Database System - Backend
+# Healthcare Database System
 
 ## Overview
 The Healthcare Database System is a backend service built using Node.js and Express to manage hospital operations. It provides secure authentication, database interactions, and API endpoints for handling users, appointments, and medical records.
