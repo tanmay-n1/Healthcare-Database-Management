@@ -1,0 +1,50 @@
+<!-- public/doctor-dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div class="logo-container">
+                <a href="/">
+                    <img src="logo.svg" alt="ProMedica Logo" class="logo">
+                </a>
+            </div>
+            <h1>Doctor Dashboard</h1>
+            <button id="logoutBtn">Logout</button>
+            <button id="report_h">View Reports</button>
+        </header>
+        
+        <main>
+            <h2>Your Appointments</h2>
+            <div class="appointments-list" id="appointmentsList">
+                <!-- Appointments will be loaded here -->
+            </div>
+        </main>
+    </div>
+<!-- Add this to doctor-dashboard.html, create a modal for managing tests -->
+<div id="testModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Manage Medical Tests</h2>
+        <div id="existingTests">
+            <!-- Existing tests will be loaded here -->
+        </div>
+        <form id="addTestForm">
+            <div class="form-group">
+                <label for="testName">New Test Name</label>
+                <input type="text" id="testName" required>
+            </div>
+            <button type="submit">Add Test</button>
+        </form>
+    </div>
+</div>
+
+    <script src="doctor-dashboard.js"></script>
+</body>
+</html>
